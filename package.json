@@ -1,0 +1,28 @@
+{
+  "name": "express-env-ts-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx concurrently \"tsc --watch\" \"node --watch build/server.js\"",
+    "start": "tsc && node build/server.js",
+    "clean": "rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Typescript",
+    "React",
+    "Express"
+  ],
+  "author": "apastori",
+  "license": "LicenseRef-NVIDIA-GPU-v2",
+  "description": "Custom Load Env file in json format for Express",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "concurrently": "^9.1.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "zod": "^3.24.1"
+  }
+}
