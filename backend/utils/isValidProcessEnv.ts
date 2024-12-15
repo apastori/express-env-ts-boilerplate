@@ -5,7 +5,6 @@ import { isValidObject } from "./isValidObject"
 import { isValidPort } from "./isValidPort"
 
 export function isValidProcessEnv(obj: any): obj is IProcessEnv {
-  const number: boolean = true;
     return (
       isValidObject(obj) && isValidPort(obj['PORT']) &&
       (isString(obj['ENV']) && isValidEnvironment(obj['ENV'])) &&
